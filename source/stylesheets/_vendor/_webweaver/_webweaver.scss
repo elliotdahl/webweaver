@@ -1,8 +1,94 @@
 .web {
-	height:80%;
-	background-color:navy;
+    height: calc(100% - 120px);
+    background-color: #002022;
 }
+
 .weaver {
-	height:20%;
-	background-color:white;
+    height: 120px;
+    background-color: white;
+}
+
+.arm-container {
+    height: 120px;
+    width: 120px;
+    border: solid 1px red;
+    position: relative;
+    margin-left: 20%;
+}
+
+.weaver-arm {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: solid 1px grey;
+}
+
+.arm-1 {
+    position: absolute;
+    bottom: 0;
+    &:after {
+        position: absolute;
+        bottom: 0;
+        left:50%;
+        transform: translate(-50%, 0);
+        content: "";
+        background-color: black;
+        width: 16px;
+        height: 38px;
+    }
+    
+}
+
+.arm-2 {
+    position: absolute;
+    bottom: 0px;
+    //transform: rotate(-45deg);
+    &:after {
+        position: absolute;
+        top: 0;
+        left:50%;
+        transform: translate(-50%, 0);
+        content: "";
+        background-color: black;
+        width: 16px;
+        height: 30px;
+    }
+    &:before {
+    	position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        content: "";
+        background-color: red;
+        width: 16px;
+        height: 16px;
+        border-radius:100%;
+    }
+}
+
+.arm-3 {
+    position: absolute;
+    bottom: 40px;
+    //transform: rotate(60deg);
+    &:after {
+        position: absolute;
+        top: 0;
+        left:50%;
+        transform: translate(-50%, 0);
+        content: "";
+        background-color: black;
+        width: 2px;
+        height: 30px;
+    }
+    &:before {
+    	position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        content: "";
+        background-color: red;
+        width: 16px;
+        height: 16px;
+        border-radius:100%;
+    }
 }
