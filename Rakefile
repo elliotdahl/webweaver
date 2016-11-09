@@ -9,6 +9,6 @@ desc "Deploy site to PWS"
 task :pws_deploy => :build do
  system("git push")
  system("touch build/Staticfile")
- system("cf target -o elliot-org -s development")
- system("cf push pui-css-experimental -f ./build-manifest/manifest.yml -p ./build")
+ system("cf target -o elliot-org -s projects")
+ system("cf push webweaver -f ./build-manifest/manifest.yml -p ./build")
 end
