@@ -1,60 +1,71 @@
 @keyframes arm-container {
-    0% {
-        margin-left: 50%;
+    // 0% {
+    //     left: 50%;
+    // }
+    // 25% {
+    //     left:-40px;
+    // }
+    // 50% {
+    //     left: 50%;
+    // }
+    // 75% {
+    //     left: calc(100% - 40px);
+    // }
+    // 100% {
+    //     left: 50%;
+    // }
+     0% {
+        left:-40px;
     }
-    25% {
-        margin-left: 0;
-    }
+    
     50% {
-        margin-left: 50%;
-    }
-    75% {
-        margin-left: 100%;
+        left: calc(100% - 40px);
     }
     100% {
-        margin-left: 50%;
+        left:-40px;
     }
+
 }
 @keyframes arm-base {
     0% {
-        transform: rotate(0);
-        bottom: -80px;
+        transform: rotate(25deg);
+
     }
     
     25% {
-        transform: rotate(-10deg);
-        bottom: -55px;
+        transform: rotate(30deg);
+
     }
 
     50% {
-        transform: rotate(0);
-        bottom: -80px;
+        transform: rotate(-25deg);
+
     }
     
     75% {
-        transform: rotate(5deg);
-        bottom: -55px;
+        transform: rotate(-30deg);
+
     }
     100% {
-        transform: rotate(0);
-        bottom: -80px;
+        transform: rotate(25deg);
+
     }
 }
 @keyframes arm-1 {
     0% {
-        transform: rotate(0);
+        transform: rotate(-20deg);
     }
     25% {
-        transform: rotate(-45deg);
+        transform: rotate(-75deg);
     }
     50% {
-        transform: rotate(0);
+        transform: rotate(20deg);
     }
     75% {
-        transform: rotate(45deg);
+        transform: rotate(75deg);
     }
     100% {
-        transform: rotate(0);
+        transform: rotate(-20deg);
     }
 }
 
@@ -63,13 +74,13 @@
         transform: rotate(0);
     }
     25% {
-        transform: rotate(90deg);
+        transform: rotate(75deg);
     }
     50% {
         transform: rotate(0);
     }
     75% {
-        transform: rotate(-90deg);
+        transform: rotate(-75deg);
     }
     100% {
         transform: rotate(0);
@@ -81,13 +92,13 @@
         transform: rotate(0);
     }
     25% {
-        transform: rotate(-15deg);
+        transform: rotate(-35deg);
     }
     50% {
         transform: rotate(0);
     }
     75% {
-        transform: rotate(25deg);
+        transform: rotate(35deg);
     }
     100% {
         transform: rotate(0);
