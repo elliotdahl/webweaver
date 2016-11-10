@@ -1,3 +1,5 @@
+$weaver-time: 4.5s;
+
 .web {
     height: calc(100% - 124px);
     background-color: #002022;
@@ -17,8 +19,8 @@
     //border: solid 1px red;
     position: absolute;
     left: 50%;
-    -webkit-animation: arm-container 7s  infinite ease-in-out;
-    animation: arm-container 7s  infinite ease-in-out;
+    -webkit-animation: arm-container $weaver-time  infinite ease-in-out;
+    animation: arm-container $weaver-time  infinite ease-in-out;
 }
 
 .weaver-flash {
@@ -48,8 +50,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1eaec', end
 .arm-base {
     position: absolute;
     top: 40px;
-    -webkit-animation: arm-base 7s infinite ease-in-out;
-    animation: arm-base 7s infinite ease-in-out;
+    -webkit-animation: arm-base $weaver-time infinite ease-in-out;
+    animation: arm-base $weaver-time infinite ease-in-out;
     &:after {
         position: absolute;
         bottom: 0;
@@ -76,8 +78,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1eaec', end
 .arm-1 {
     position: absolute;
     top: 40px;
-    -webkit-animation: arm-1 7s infinite ease-in-out;
-    animation: arm-1 7s infinite ease-in-out;
+    -webkit-animation: arm-1 $weaver-time infinite ease-in-out;
+    animation: arm-1 $weaver-time infinite ease-in-out;
     &:after {
         position: absolute;
         bottom: 0;
@@ -104,8 +106,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1eaec', end
 .arm-2 {
     position: absolute;
     top: 40px;
-    -webkit-animation: arm-2 7s infinite ease-in-out;
-    animation: arm-2 7s infinite ease-in-out;
+    -webkit-animation: arm-2 $weaver-time infinite ease-in-out;
+    animation: arm-2 $weaver-time infinite ease-in-out;
     // transform: rotate(-20deg);
     &:after {
         position: absolute;
@@ -133,8 +135,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1eaec', end
 .arm-3 {
     position: absolute;
     top: -40px;
-    -webkit-animation: arm-3 7s infinite ease-in-out;
-    animation: arm-3 7s infinite ease-in-out;
+    -webkit-animation: arm-3 $weaver-time infinite ease-in-out;
+    animation: arm-3 $weaver-time infinite ease-in-out;
     // transform: rotate(15deg);
     &:after {
         position: absolute;
