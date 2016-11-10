@@ -19,8 +19,8 @@ $weaver-time: 4.5s;
     //border: solid 1px red;
     position: absolute;
     left: 50%;
-    -webkit-animation: arm-container $weaver-time  infinite ease-in-out;
-    animation: arm-container $weaver-time  infinite ease-in-out;
+    -webkit-animation: arm-container $weaver-time infinite ease-in-out;
+    animation: arm-container $weaver-time infinite ease-in-out;
 }
 
 .weaver-flash {
