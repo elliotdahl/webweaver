@@ -4,11 +4,27 @@ title: Elliot Dahl Designs
 
 .page.full-vh
   .web
-    web
+    .starmap
+      #stars
+      #stars2
+      #stars3
   .weaver
     .arm-container
-      .weaver-arm.arm-1
+      .weaver-arm.arm-base
+        .weaver-arm.arm-1
+          .weaver-arm.arm-2
+            .weaver-arm.arm-3
+
+    //Reverse the order to keep the needle always down
+    .arm-container{:style => "margin-left:60px;position:absolute;top:0;"}
+      .weaver-arm.arm-3
         .weaver-arm.arm-2
-          .weaver-arm.arm-3
+          .weaver-arm.arm-1
+            .weaver-arm.arm-base
+
+      
+      
+      
+    
   
 	
