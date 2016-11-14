@@ -1,4 +1,5 @@
 $weaver-time: 4.5s;
+$weaver-timing: linear;
 
 .web {
     height: calc(100% - 124px);
@@ -19,8 +20,8 @@ $weaver-time: 4.5s;
     //border: solid 1px red;
     position: absolute;
     left: 50%;
-    -webkit-animation: arm-container $weaver-time infinite ease-in-out;
-    animation: arm-container $weaver-time infinite ease-in-out;
+    // -webkit-animation: arm-container $weaver-time infinite ease-in-out;
+    // animation: arm-container $weaver-time infinite ease-in-out;
 }
 
 .weaver-flash {
@@ -50,8 +51,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1eaec', end
 .arm-base {
     position: absolute;
     top: 40px;
-    -webkit-animation: arm-base $weaver-time infinite ease-in-out;
-    animation: arm-base $weaver-time infinite ease-in-out;
+    -webkit-animation: arm-base $weaver-time infinite $weaver-timing;
+    animation: arm-base $weaver-time infinite $weaver-timing;
     &:after {
         position: absolute;
         bottom: 0;
@@ -78,8 +79,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1eaec', end
 .arm-1 {
     position: absolute;
     top: 40px;
-    -webkit-animation: arm-1 $weaver-time infinite ease-in-out;
-    animation: arm-1 $weaver-time infinite ease-in-out;
+    -webkit-animation: arm-1 $weaver-time infinite $weaver-timing;
+    animation: arm-1 $weaver-time infinite $weaver-timing;
     &:after {
         position: absolute;
         bottom: 0;
@@ -106,8 +107,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1eaec', end
 .arm-2 {
     position: absolute;
     top: 40px;
-    -webkit-animation: arm-2 $weaver-time infinite ease-in-out;
-    animation: arm-2 $weaver-time infinite ease-in-out;
+    -webkit-animation: arm-2 $weaver-time infinite $weaver-timing;
+    animation: arm-2 $weaver-time infinite $weaver-timing;
     // transform: rotate(-20deg);
     &:after {
         position: absolute;
@@ -135,8 +136,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1eaec', end
 .arm-3 {
     position: absolute;
     top: -40px;
-    -webkit-animation: arm-3 $weaver-time infinite ease-in-out;
-    animation: arm-3 $weaver-time infinite ease-in-out;
+    -webkit-animation: arm-3 $weaver-time infinite $weaver-timing;
+    animation: arm-3 $weaver-time infinite $weaver-timing;
     // transform: rotate(15deg);
     &:after {
         position: absolute;
